@@ -1,0 +1,335 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font: 400 16px/1.5 Arial, Tahoma Verdana sans-serif;
+	color: #333;
+	background: #fff;
+}
+
+ul {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+a {
+	text-decoration: none;
+	display: inline-block;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+p {
+	margin: 0 0 15px;
+}
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+
+.wrapper {
+	overflow: hidden;
+}
+
+.section {
+	padding: 60px 0;
+}
+
+.section_blue {
+	background: #445162;
+	color: #fff;
+}
+
+.section_gray {
+	background: #f5f5f5;
+}
+
+.column-wrapper {
+	display: flex;
+}
+
+.valing-center {
+	align-items: center;
+}
+
+.col {
+	flex-grow: 1;
+	padding-right: 22px;
+}
+
+.col+.col {
+	padding-left: 22px;
+}
+
+.col:last-child {
+	padding-right: 0;
+}
+
+.col_50 {
+	width: 50%;
+}
+
+.col_60 {
+	width: 60%;
+}
+
+.col_40 {
+	width: 40%;
+}
+
+.col_60 p {
+	padding-right: 20px;
+}
+
+.header h1 {
+	font-size: 60px;
+	font-weight: 400;
+	margin: 0 0 32px 0;
+}
+
+.checklist {
+	font-size: 20px;
+}
+
+.checklist li {
+	position: relative;
+	padding-left: 36px;
+	margin: 0 0 5px;
+}
+
+.checklist li:before {
+	content: "";
+	position: absolute;
+	left: 0;
+	top: 3px;
+	width: 25px;
+	height: 19px;
+	background: url("../images/check-icon.png") no-repeat 50%;
+	background-size: auto 100%;
+}
+
+.product_image_wrapper,
+.about_image_wrapper {
+	display: flex;
+	justify-content: flex-end;
+}
+
+.product_image_wrapper img {
+	max-width: 470px;
+	max-height: 300px;
+}
+
+.title30 {
+	font-size: 30px;
+	color: #445161;
+	font-weight: 400;
+	text-align: center;
+	margin: 0 0 25px;
+}
+
+.text-left {
+	text-align: left !important;
+}
+
+.about_image_wrapper img {
+	max-width: 430px;
+	max-height: 300px;
+}
+
+.plus_list li {
+	padding: 15px 0 5px 42px;
+	position: relative;
+	width: 50%;
+}
+
+.plus_list {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.plus_list li:before {
+	content: "+";
+	width: 32px;
+	height: 32px;
+	position: absolute;
+	left: 0;
+	top: 21px;
+	background: #445161;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	line-height: 1;
+	font-weight: 500;
+	color: #fff;
+	font-size: 42px;
+}
+
+/* Description */
+
+.description_item {
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	flex-grow: 1;
+	margin: 0 0 15px;
+}
+
+.description_item img {
+	max-width: 202px;
+	max-height: 155px;
+	margin-right: 15px;
+}
+
+.title24 {
+	font-size: 24px;
+	color: #445161;
+	font-weight: 400;
+	margin-bottom: 10px;
+}
+
+h4.blue {
+	line-height: 0.75;
+}
+
+/* Reviews */
+
+.reviews_item {
+	display: flex;
+	justify-content: center;
+	flex-grow: 1;
+	align-items: flex-start;
+
+}
+
+
+
+.reviews_img {
+	width: 75px;
+	height: 75px;
+	border-radius: 50%;
+	overflow: hidden;
+
+
+}
+
+
+
+.reviews_text {
+	background: #ebebeb;
+	padding: 15px;
+	margin: 0 0 25px 25px;
+	max-width: 470px;
+	border-radius: 7px;
+	position: relative;
+
+}
+
+.reviews_text p {
+	font-size: 14px;
+	line-height: 1.2;
+	font-style: italic;
+
+}
+
+.reviews_text:before {
+	content: "";
+	width: 0;
+	height: 0;
+	border-style: solid;
+	border-width: 12.5px 12px 12.5px 0;
+	border-color: transparent #ebebeb transparent transparent;
+	position: absolute;
+	left: -12px;
+	top: 30px;
+}
+
+p.signature {
+	margin: 0;
+	font-style: none;
+	color: #989898;
+
+}
+
+/* Buy */
+
+.buy_wrapper {
+
+	justify-content: center;
+	align-items: flex-end;
+	flex-grow: 1;
+}
+
+.buy_item {
+
+	background: #445162;
+	border: 2px solid #445162;
+	border-radius: 7px;
+	width: 300px;
+	margin-right: 44px;
+}
+
+.buy_item:last-child {
+	margin-right: 0;
+}
+
+h4.white {
+	color: #fff;
+	text-align: center;
+}
+
+.price {
+
+	padding: 15px 0;
+	background: #fff;
+}
+
+.price p {
+	font-size: 40px;
+	text-align: center;
+	color: #445162;
+	margin: 0;
+
+}
+
+ul.adv {
+	margin: 20px;
+}
+
+.adv li {
+	font-size: 14px;
+	color: #fff;
+	line-height: 1.7;
+
+}
+
+.button {
+	background: #fff;
+	border-radius: 5px;
+	padding: 10px 0;
+	text-align: center;
+	margin: 0 20px 20px;
+
+}
+
+.button:hover {
+	opacity: 0.5;
+
+}
+
+.button a {
+	text-transform: uppercase;
+	color: #445161;
+	font-size: 18px;
+	font-weight: 700;
+
+
+}
